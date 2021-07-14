@@ -13,6 +13,14 @@
             @ViewData["Header"]
         </h1>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        @*@Html.ActionLink("Home Page", "Index", "Home")*@
+        <ul class="navbar-nav">
+            <a asp-controller="Home" asp-action="Index" class="nav-link active text-info bg-dark" aria-current="page">Home page</a> 
+            <a asp-controller="Home" asp-action="About" class="nav-link active text-info bg-dark" aria-current="page">About Page</a> 
+            <a asp-controller="Home" asp-action="ThankYou" class="nav-link active text-info bg-dark" aria-current="page">TY Page</a> 
+        </ul>
+    </nav>
     <main>
         @RenderBody()
     </main>
