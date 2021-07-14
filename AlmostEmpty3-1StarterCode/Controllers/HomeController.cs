@@ -10,20 +10,20 @@ namespace AlmostEmpty3_1StarterCode.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.title = "Home";
+            
             
             return View();
         }
         public IActionResult About() 
         {
-            ViewBag.title = "About";
+            
             
             return View();
         }
 
         public IActionResult ThankYou()
         {
-            ViewBag.title = "ThankYou";
+            
             
             return View();
         }
